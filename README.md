@@ -1,7 +1,6 @@
 # AdBannerDemo
 安卓广告循环播放
 ---
----
 安卓广告栏循环播放时很多app都会有的功能，实现方法也有很多，常见的有gallery和viewpager，今天使用github上一个广告栏框架实现这一功能。
 
 + Step 1：
