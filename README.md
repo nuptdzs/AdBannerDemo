@@ -1,9 +1,6 @@
 # AdBannerDemo
 安卓广告循环播放
 ---
-title: android Banner广告栏循环自动播放
-tags: android banner
-grammar_cjkRuby: true
 ---
 安卓广告栏循环播放时很多app都会有的功能，实现方法也有很多，常见的有gallery和viewpager，今天使用github上一个广告栏框架实现这一功能。
 
@@ -30,7 +27,7 @@ grammar_cjkRuby: true
       </com.bigkoo.convenientbanner.ConvenientBanner>
   </RelativeLayout>
   ```
- + Step 3 :
++ Step 3 :
  创建banner中的item布局
    ``` xml
      <?xml version="1.0" encoding="utf-8"?>
@@ -63,7 +60,7 @@ grammar_cjkRuby: true
             android:textSize="10.669983sp" />
     </RelativeLayout>
    ```
- + Step 4：
++ Step 4：
  	构造BannerItemViewHolder处理Item布局的呈现效果
     ``` java
     public class BannerHolderView implements Holder<BannerBean> {
@@ -87,7 +84,7 @@ grammar_cjkRuby: true
         }
     }
     ```
- + Step 5：
++ Step 5：
  	在activity或者fragment中对banner进行初始化并加载布局
     ``` java
      //对应banner中需要填充的数据模型，可根据所需自定义属性 一般包括对应图片和你点击所需要跳转的链接或者标识你广告类型的Type等；
@@ -105,7 +102,7 @@ grammar_cjkRuby: true
     //这里设置底部小点的样式，若不设置则不显示
     convenientBanner.setPageIndicator(new int[]{R.drawable.dot_normal,R.drawable.dot_focused});
     ```
- + Step 6：
++ Step 6：
  设置自动切换
  需要在activity的onresume和onPause里加入以下代码。
    ``` java
@@ -127,7 +124,7 @@ grammar_cjkRuby: true
           }
       }
    ```
- + PS
++ PS
  如果需要添加切换动画效果可引入这个库，因为本项目是基于viewpager实现的，所以只需要对viewpager设置切换动画效果即可
  
     > compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
@@ -138,7 +135,7 @@ grammar_cjkRuby: true
     具体的动画效果实现请参考
     https://github.com/ToxicBakery/ViewPagerTransforms
     
-	 ## 最后
+>## 最后
    感谢该项目的[作者][1]   
    希望大家在使用中可以互相交流
    附上我写的demo [点击查看][2]
