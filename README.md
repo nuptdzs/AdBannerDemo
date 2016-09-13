@@ -61,13 +61,13 @@
    ```
 + Step 4：
  	构造BannerItemViewHolder处理Item布局的呈现效果
-    ``` java
+ 	``` java
     public class BannerHolderView implements Holder<BannerBean> {
         @BindView(R.id.bannerImage)
         ImageView bannerImage;
         @BindView(R.id.bannerFlag)
         TextView bannerFlag;
-
+        
         @Override
         public View createView(Context context) {
             View view = LayoutInflater.from(context).inflate(R.layout.banner_item, null);
@@ -82,7 +82,7 @@
 
         }
     }
-    ```
+   ``` 
 + Step 5：
  	在activity或者fragment中对banner进行初始化并加载布局
     ``` java
